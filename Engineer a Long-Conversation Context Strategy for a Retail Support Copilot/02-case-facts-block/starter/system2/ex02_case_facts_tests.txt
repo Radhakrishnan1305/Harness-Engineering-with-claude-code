@@ -1,0 +1,20 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.0, pytest-9.1.1, pluggy-1.7.0 -- /workspace/Engineer a Long-Conversation Context Strategy for a Retail Support Copilot/01-prune-tool-output/starter/.venv/bin/python3.13
+cachedir: .pytest_cache
+rootdir: /workspace/Engineer a Long-Conversation Context Strategy for a Retail Support Copilot/02-case-facts-block/starter
+configfile: pyproject.toml
+plugins: anyio-4.15.1
+collecting ... collected 10 items
+
+tests/test_case_facts.py::test_required_fields_has_12_entries PASSED     [ 10%]
+tests/test_case_facts.py::test_required_fields_cover_three_issues PASSED [ 20%]
+tests/test_case_facts.py::test_case_facts_dataclass_has_required_fields PASSED [ 30%]
+tests/test_case_facts.py::test_to_markdown_uses_top_level_header_and_fixed_key_order PASSED [ 40%]
+tests/test_case_facts.py::test_extraction_error_lists_missing_fields PASSED [ 50%]
+tests/test_pruner.py::test_lookup_order_fixture_has_at_least_40_fields PASSED [ 60%]
+tests/test_pruner.py::test_pruner_keeps_exactly_the_contracted_set PASSED [ 70%]
+tests/test_pruner.py::test_pruned_output_under_200_tokens PASSED         [ 80%]
+tests/test_pruner.py::test_pruner_raises_on_missing_required_field PASSED [ 90%]
+tests/test_antipatterns.py::test_pruner_has_no_anthropic_import PASSED   [100%]
+
+============================== 10 passed in 0.52s ==============================

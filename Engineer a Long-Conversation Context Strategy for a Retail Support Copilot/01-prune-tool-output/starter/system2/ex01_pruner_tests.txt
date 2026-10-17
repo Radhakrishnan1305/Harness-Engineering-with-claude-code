@@ -1,0 +1,15 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.0, pytest-9.1.1, pluggy-1.7.0 -- /workspace/Engineer a Long-Conversation Context Strategy for a Retail Support Copilot/01-prune-tool-output/starter/.venv/bin/python3.13
+cachedir: .pytest_cache
+rootdir: /workspace/Engineer a Long-Conversation Context Strategy for a Retail Support Copilot/01-prune-tool-output/starter
+configfile: pyproject.toml
+plugins: anyio-4.15.1
+collecting ... collected 5 items
+
+tests/test_pruner.py::test_lookup_order_fixture_has_at_least_40_fields PASSED [ 20%]
+tests/test_pruner.py::test_pruner_keeps_exactly_the_contracted_set PASSED [ 40%]
+tests/test_pruner.py::test_pruned_output_under_200_tokens PASSED         [ 60%]
+tests/test_pruner.py::test_pruner_raises_on_missing_required_field PASSED [ 80%]
+tests/test_antipatterns.py::test_pruner_has_no_anthropic_import PASSED   [100%]
+
+============================== 5 passed in 0.49s ===============================
